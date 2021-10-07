@@ -150,7 +150,8 @@ main {
 
 .main-tables-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     width: 70%;
     min-width: 235px;
@@ -161,11 +162,11 @@ main {
 
 .main-tables-container .table-div {
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
     width: 90%;
     min-width: 230px;
     max-width: 300px;
-    height: 250px;
+    height: 320px;
     font-size: 1.6rem;
     column-gap: 2%;
     row-gap: 2%;
@@ -266,7 +267,6 @@ main {
 
 .update {
     grid-column: span 2;
-    grid-row: start 7;
     display: flex;
     border: none;
     border-radius: 10px;
@@ -276,9 +276,25 @@ main {
     align-items: center;
     width: 81%;
     height: 33px;
-    margin: -33px auto;
+    column-gap: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .update .p {
     font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: var(--warm-black);
 }
+
+/* .com {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 29px;
+}
+
+.com .title {
+    color: var(--secondary-blue);
+} */

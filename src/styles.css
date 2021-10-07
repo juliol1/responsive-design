@@ -152,6 +152,11 @@ main {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    font-family: 'Inter', sans-serif;
 }
 
 .main-tables-container .table-div {
@@ -160,11 +165,10 @@ main {
     width: 90%;
     min-width: 230px;
     max-width: 300px;
-    height: 280px;
-    margin: 0 auto;
+    height: 250px;
     font-size: 1.6rem;
-    row-gap: 1%;
-    column-gap: 1%;
+    column-gap: 2%;
+    row-gap: 2%;
 }
 
 .title {
@@ -183,12 +187,12 @@ main {
 .coin, .coin + p {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     background-color: var(--just-white);
     border: none;
     border-radius: 6px;
     padding: 13px;
     color: var(--gray);
-    align-self: center;
 }
 
 .bitcoin + p > span {

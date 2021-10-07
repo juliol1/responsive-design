@@ -1,0 +1,24 @@
+{
+  "name": "responsive-design",
+  "version": "1.0.0",
+  "description": "creacion de una pagina que sea adecuada con responsive design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliol1/responsive-design.git"
+  },
+  "keywords": [
+    "responsive",
+    "design",
+    "bitcoin"
+  ],
+  "author": "juliol1",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juliol1/responsive-design/issues"
+  },
+  "homepage": "https://github.com/juliol1/responsive-design#readme"
+}

@@ -248,3 +248,11 @@ main {
     line-height: 1.5rem;
     color: var(--warm-black);
 }
+
+.main-comision-table .main-currency-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
+}

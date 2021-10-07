@@ -151,18 +151,20 @@ main {
 .main-tables-container {
     display: flex;
     justify-content: center;
-    width: 90%;
     margin: 0 auto;
 }
 
 .main-tables-container .table-div {
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
-    width: auto;
-    height: 270px;
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 280px;
     margin: 0 auto;
-    padding: 20px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    row-gap: 1%;
+    column-gap: 1%;
 }
 
 .title {
@@ -171,7 +173,9 @@ main {
     grid-column: span 2;
     padding: 13px;
     color: var(--bitcoin-orange);
-    font-weight: bolder;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-weight: bold;
     border: none;
     background-color: transparent;
 }
@@ -179,9 +183,50 @@ main {
 .coin, .coin + p {
     display: flex;
     justify-content: flex-start;
-    background-color: white;
+    background-color: var(--just-white);
     border: none;
     border-radius: 6px;
     padding: 13px;
+    color: var(--gray);
+    align-self: center;
+}
 
+.bitcoin + p > span {
+    height: 20px;
+    width: 20px;
+    background-image: url('./assets/icons/trending-down.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.ethereum + p > span {
+    height: 20px;
+    width: 20px;
+    background-image: url('./assets/icons/trending-up.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.ripple + p > span {
+    height: 20px;
+    width: 20px;
+    background-image: url('./assets/icons/trending-down.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.stellar + p > span {
+    height: 20px;
+    width: 20px;
+    background-image: url('./assets/icons/trending-down.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
 }

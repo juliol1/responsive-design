@@ -148,114 +148,157 @@ main {
     color: #757575;
 }
 
-.main-currency-table {
+.main-tables-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
     font-family: 'Inter', sans-serif;
 }
 
-.main-currency-table .main-currency-table--title {
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 2.3rem;
-    color: var(--bitcoin-orange);
-}
-
-.currency-table-container {
+.main-tables-container .table-div {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
     width: 90%;
     min-width: 230px;
     max-width: 300px;
-    height: 250px;
-    margin: 0 auto;
+    height: 320px;
+    font-size: 1.6rem;
+    column-gap: 2%;
+    row-gap: 2%;
 }
 
-.currency-table-container table {
-    width: 100%;
-    height: 100%;
+.title {
+    display: flex;
+    justify-content: flex-start;
+    grid-column: span 2;
+    padding: 13px;
+    color: var(--bitcoin-orange);
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
 }
 
-.currency-table-container td {
-    width: 50%;
+.coin, .coin + p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--just-white);
+    border: none;
+    padding: 13px;
+}
+
+.coin {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
     color: var(--gray);
-    background-color: var(--just-white);
 }
 
-.currency-table-container .table__top-left {
-    border-radius: 15px 0 0 0;
-}
-
-.currency-table-container .table__top-right {
-    border-radius: 0 15px 0 0;
-}
-
-.currency-table-container .table__bottom-left {
-    border-radius: 0 0 0 15px;
-}
-
-.currency-table-container .table__bottom-right {
-    border-radius: 0 0 15px 0;
-}
-
-.currency-table-container .table__right {
+.coin + p {
+    justify-content: center;
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.7rem;
     color: #757575;
 }
 
-.currency-table-container .down {
-    display: inline-block;
-    width: 15px;
+.bitcoin {
+    border-radius: 15px 0 0 0;
+}
+
+.bitcoin + p {
+    border-radius: 0 15px 0 0;
+}
+
+.stellar + p {
+    border-radius: 0 0 15px 0;
+}
+
+.stellar {
+    border-radius: 0 0 0 15px;
+}
+
+.bitcoin + p > span {
     height: 15px;
+    width: 15px;
     background-image: url('./assets/icons/trending-down.svg');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     margin-left: 10px;
 }
 
-.currency-table-container .up {
-    display: inline-block;
-    width: 15px;
+.ethereum + p > span {
     height: 15px;
+    width: 15px;
     background-image: url('./assets/icons/trending-up.svg');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     margin-left: 10px;
 }
 
-.currency-table--date {
-    width: 190px;
-    height: 30px;
-    margin: 0 auto;
-    margin-top: 15px;
-    padding: 8px;
-    background-color: var(--soft-orange);
-    border-radius: 8px;
+.ripple + p > span {
+    height: 15px;
+    width: 15px;
+    background-image: url('./assets/icons/trending-down.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
 }
 
-.currency-table--date p {
+.stellar + p > span {
+    height: 15px;
+    width: 15px;
+    background-image: url('./assets/icons/trending-down.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+.update {
+    grid-column: span 2;
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--soft-orange);
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 81%;
+    height: 33px;
+    column-gap: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.update .p {
     font-size: 1.2rem;
-    font-weight: 300;
     line-height: 1.5rem;
+    font-weight: 300;
     color: var(--warm-black);
 }
 
-.main-comision-table .main-currency-table--title {
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 2.3rem;
-    color: var(--secondary-blue);
+/* .com {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 29px;
 }
+
+.com .title {
+    color: var(--secondary-blue);
+} */
+
 
 .main-product-detail {
     position: relative;

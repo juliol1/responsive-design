@@ -1,5 +1,41 @@
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 18vh;
+}
+
+header img {
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+.header--title-container {
+    width: 60%;
+    height: inherit;
+    margin-left: 20px;
+}
+
+.header--title-container .header--button {
+    left: calc(80% - 120px);
+    top: 60px;
+    width: 150px;
+    padding: 8px;
+}
+
+.main--exchange-container {
+    display: flex;
+}
+
+.main--exchange-container .background-img {
+    width: 200px;
+    height: 400px;
+}
+
 .main-tables-container {
     display: flex;
+    flex-direction: column;
     width: 930px;
     margin: 0 auto;
 }

@@ -38,6 +38,7 @@ header img {
     flex-direction: column;
     width: 930px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .product-cards--container {
@@ -49,4 +50,5 @@ header img {
 
 .plans-container--slider {
     justify-content: center;
+    overflow: hidden;
 }
